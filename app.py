@@ -20,8 +20,11 @@ import os
 app = Flask(__name__)
 
 #Child Maltreatment Detection
-MODEL_ARCHITECTURE = 'E:\\PROJECTS\\KIDsVIEW\\TE_Project\\models\\model_CM.json'
-MODEL_WEIGHTS = 'E:\\PROJECTS\\KIDsVIEW\\TE_Project\\models\\model_child_maltreatment_final.h5'
+# MODEL_ARCHITECTURE = 'E:\\PROJECTS\\KIDsVIEW\\TE_Project\\models\\model_CM.json'
+MODEL_ARCHITECTURE = 'D:\Projects\KIDsVIEW-A-Parents-Companion\models\model_CM.json'
+
+# MODEL_WEIGHTS = 'E:\\PROJECTS\\KIDsVIEW\\TE_Project\\models\\model_child_maltreatment_final.h5'
+MODEL_WEIGHTS = 'D:\Projects\KIDsVIEW-A-Parents-Companion\models\model_child_maltreatment_final.h5'
 
 # Load the model from external files
 json_file = open(MODEL_ARCHITECTURE)
@@ -41,8 +44,8 @@ def model_predict(img_path, model):
     return preds
 
 #Child Activity Recognition
-MODEL_ARCHITECTUREE = 'E:\PROJECTS\KIDsVIEW\TE_Project\models\model_activity.json'
-MODEL_WEIGHTSS = 'E:\PROJECTS\KIDsVIEW\TE_Project\models\model_activity_final.h5'
+MODEL_ARCHITECTUREE = 'D:\Projects\KIDsVIEW-A-Parents-Companion\models\model_activity.json'
+MODEL_WEIGHTSS = 'D:\Projects\KIDsVIEW-A-Parents-Companion\models\model_activity_final.h5'
 
 # Load the model from external files
 json_file = open(MODEL_ARCHITECTUREE)
@@ -61,7 +64,7 @@ import pandas as pd
 import numpy as np
 
 
-model1 = "E:\PROJECTS\KIDsVIEW\TE_Project\pose_deploy_linevec_faster_4_stages.prototxt"
+model1 = "D:\Projects\KIDsVIEW-A-Parents-Companion\pose_deploy_linevec_faster_4_stages.prototxt"
 model2 = "E:\PROJECTS\KIDsVIEW\TE_Project\pose_iter_160000.caffemodel"
 
 numero_pontos = 15
